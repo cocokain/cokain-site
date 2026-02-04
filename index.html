@@ -14,10 +14,10 @@
             <ul class="nav-links">
                 <li><a href="#home">ホーム</a></li>
                 <li><a href="#projects">一覧</a></li>
-                <li><a href="https://www.youtube.com/@Ms4qqqay"target="_blank" rel="noopener noreferrer">YouTube</a></li>
-                <li><a href="#contact">Discord</a></li>
+                <li><a href="https://www.youtube.com/@Ms4qqqay" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+                <li><a href="#" id="discord-link" data-discord="@lillix1qq">Discord</a></li>
             </ul>
-            <button class="menu-toggle">☰</button>
+            <button class="menu-toggle" aria-label="メニュー" aria-expanded="false">☰</button>
         </nav>
     </header>
 
@@ -29,7 +29,7 @@
             <p>このサイトでは自分が公開しているGitHubPage(サイト)やその他諸々掲載してあります。 </p>
             <div class="cta-buttons">
                 <button class="btn btn-primary" onclick="scrollToSection('projects')">一覧</button>
-                <button class="btn btn-secondary" onclick="scrollToSection('contact')">YouTube</button>
+                <a class="btn btn-secondary" href="https://www.youtube.com/@Ms4qqqay" target="_blank" rel="noopener noreferrer">YouTube</a>
             </div>
         </div>
     </section>
@@ -40,7 +40,7 @@
         <div class="projects-grid">
             <!-- Project 1 -->
             <div class="project-card">
-                <div class="project-image"><img src="images/project1.png" alt="SwitchTool-Main Site"></div>
+                <div class="project-image"><img src="image/project1.png" alt="SwitchTool-Main Site"></div>
                 <div class="project-content">
                     <h3>SwitchTool-Main Site</h3>
                     <p>Minecreaft: Nintendo Switch Edition 向けのツールサイトで様々な機能を提供します。
@@ -55,7 +55,7 @@
 
             <!-- Project 2 -->
             <div class="project-card">
-                <div class="project-image"><img src="images/project2.png" alt="ASM Converter"></div>
+                <div class="project-image"><img src="image/project2.png" alt="ASM Converter"></div>
                 <div class="project-content">
                     <h3>ASM Converter</h3>
                     <p>ASM Converterは、アセンブリコードをチートコードの形式に変換するための強力なツールです。
@@ -71,17 +71,16 @@
             <div class="project-card">
                 <div class="project-image"><img src="image/project3.png" alt="COMINGSOON"></div>
                 <div class="project-content">
-                    <h3>none
+                    <h3>Translator
                     </h3>
-                    <p>なにもないよん</p>
+                    <p>色々な言語を翻訳できます。Google翻訳のAPIを使用して翻訳を実行します。性能はとても悪いです。遊び心で作ったものなのでご了承ください。</p>
                     <div class="project-tags">
-                        <span class="tag">Source</span>
-                        <span class="tag">Source</span>
-                        <span class="tag">Source</span>
+                        <span class="tag">API</span>
+                        <span class="tag">Bad</span>
                     </div>
                     <div class="project-links">
-                        <a href="#">詳細</a>
-                        <a href="#">ダウンロード</a>
+                        <a href="https://cocokain.github.io/Translator-BY-Cokain/" target="_blank" rel="noopener noreferrer">サイトへ</a>
+                        <a href="https://github.com/cocokain/Translator-BY-Cokain" target="_blank" rel="noopener noreferrer">ソースコード</a>
                     </div>
                 </div>
             </div>
@@ -184,11 +183,11 @@
             <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a>
             <a href="https://github.com/cocokain" target="_blank" rel="noopener noreferrer">GitHub</a>
             <a href="https://www.youtube.com/@Ms4qqqay" target="_blank" rel="noopener noreferrer">YouTube</a>
-            <a href="#">Instagram</a>
         </div>
         <p>&copy; 2026 cocokain. All rights reserved.</p>
     </footer>
 
+    <div id="toast" class="toast" aria-live="polite" role="status"></div>
     <script src="script.js"></script>
 </body>
 </html>
